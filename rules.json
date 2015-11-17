@@ -1,0 +1,27 @@
+{
+    "inputs": {
+        "kb": {
+            "alias": "kilobyte"
+        },
+        "mb": {
+            "alias": "megabyte"
+        },
+        "b": {
+            "alias": "byte"
+        }
+    },
+    "routes": {
+        "byte_kilobyte": {
+            "expr": "/",
+            "magnitude": 1000 
+        },
+        "kilobyte_megabyte": {
+            "expr": "/",
+            "magnitude": 1000
+        },
+        "byte_megabyte": {
+            "expr": "/",
+            "magnitude": 1000000
+        }
+    }
+}
