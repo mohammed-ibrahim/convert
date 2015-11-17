@@ -33,14 +33,14 @@ def convert():
         print 'Unknows unit type: ' + str(to_route)
         return
 
-    if not value.isdigit():
+    if not str(value).replace('.', '').isdigit():
         print 'value_to_convert should be an integer'
         return
 
     f_alias = contents['inputs'][from_route]['alias']
     t_alias = contents['inputs'][to_route]['alias']
 
-    print expr_evaluator.evaluate(contents['routes'], f_alias + '_' + t_alias, int(value))
+    print expr_evaluator.evaluate(contents['routes'], f_alias + '_' + t_alias, float(value))
     return None
 
 convert()

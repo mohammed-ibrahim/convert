@@ -1,10 +1,10 @@
 
 def multiply(a, b):
-    return (a * b)
+    return (float(a) * float(b))
 
 
 def divide(a, b):
-    return (a/b)
+    return (float(a) / float(b))
 
 
 expr_map = {
